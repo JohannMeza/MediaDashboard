@@ -11,7 +11,11 @@ const networksSchema = new Schema({
 
   instagram_followers: { type: Number },
   instagram_likes: { type: Number },
-  instagram_views: { type: Number }
+  instagram_views: { type: Number },
+
+  youtube_followers: { type: Number },
+  youtube_likes: { type: Number },
+  youtube_views: { type: Number }
 },{
   versionKey: false
 })

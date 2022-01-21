@@ -16,7 +16,10 @@ router.post('/networks', async (req, res) => {
     twitter_views, 
     instagram_followers, 
     instagram_likes, 
-    instagram_views } = req.body;
+    instagram_views,
+    youtube_followers, 
+    youtube_likes, 
+    youtube_views } = req.body;
     
   if (!facebook_followers &&
     !facebook_likes &&
@@ -26,7 +29,10 @@ router.post('/networks', async (req, res) => {
     !twitter_views &&
     !instagram_followers &&
     !instagram_likes &&
-    !instagram_views ) return res.status(400).json({ "Data incomplete": "Datos incompletos" })
+    !instagram_views &&
+    !youtube_followers &&
+    !youtube_likes &&
+    !youtube_views ) return res.status(400).json({ "Data incomplete": "Datos incompletos" })
 
   const networks = new Networks({ facebook_followers, 
     facebook_likes, 
@@ -36,7 +42,11 @@ router.post('/networks', async (req, res) => {
     twitter_views, 
     instagram_followers, 
     instagram_likes, 
-    instagram_views });
+    instagram_views,
+    youtube_followers, 
+    youtube_likes, 
+    youtube_views
+   });
 
   await networks.save();
   res.json(networks)
@@ -49,6 +59,16 @@ router.put('/networks/:id', async ( req, res) => {
     res.json(networks);
   } catch (err) {
     return res.status(500).send(err)
+  }
+})
+
+router.delete('/networks/:id', async (req, res) => {
+  try {
+    const network = await Networks.findByIdAndDelete(req.params.id);
+    if (!network) return res.status(404).json({ "Not Found": "Network Not Found" });
+    res.json(network);
+  } catch (err) {
+    return res.status(500).send(err);
   }
 })
 

@@ -1,0 +1,100 @@
+:root {
+  // ### Color blue
+  --color-blue-800: #20232A; // hsl(230, 17%, 14%)
+  --color-blue-700: #1D2029; // hsl(232, 19%, 15%)
+  --color-blue-600: #252B43; // hsl(228, 28%, 20%)
+  --color-blue-500: #616577; // hsl(228, 34%, 66%)
+  --color-blue-400: #AEB2CB;
+  --color-blue-300: #F0F3FA;
+  --color-blue-200: #F8F9FE;
+  --color-blue-100: hsl(0, 0%, 100%);
+
+  // --color: hsl(225, 100%, 98%);
+  // --color: hsl(227, 47%, 96%);
+  // --color: hsl(228, 12%, 44%);
+  // --color: hsl(230, 17%, 14%);
+
+
+  // ### Color blue
+  --color-light-blue-600: #4497CD;
+  --color-light-blue-500: #188FF5;
+  --color-light-blue-400: #349ADC;
+
+  // ### color orange
+  --color-orange-500: #F7BD73;
+
+  // ### color pink
+  --color-pink-500: #E24C96;
+  
+  // ### color red
+  --color-red-500: #C30328;
+  
+  // ### color green
+  --color-green-500: #3ED091;
+}
+
+:root {
+  // --- Dark mode
+  --bg-dm-blue-high: var(--color-blue-700);
+  --bg-dm-blue-dark: var(--color-blue-600);
+  --bg-dm-blue-medium: var(--color-blue-500);
+  --bg-dm-blue-regular: var(--color-blue-400);
+  --bg-dm-blue-low: var(--color-blue-300);
+  --bg-dm-blue-light: var(--color-blue-200);
+  --bg-dm-blue-extra-light: var(--color-blue-100);
+
+  --bg-dm-light-blue-medium: var(--color-light-blue-600);
+  --bg-dm-light-blue-regular: var(--color-light-blue-500);
+  --bg-dm-light-blue-low: var(--color-light-blue-400);
+
+  --bg-dm-orange-regular: var(--color-orange-500);
+
+  --bg-dm-pink-regular: var(--color-pink-500);
+
+  --bg-dm-red-regular: var(--color-red-500);
+
+  --bg-dm-green-regular: var(--color-green-500);
+
+  // ---- Colores de texto | iconos 
+  --c-dm-white-light: var(--color-blue-100);
+  --c-dm-blue-low: var(--color-blue-400);
+  --c-dm-blue-light: var(--color-blue-300);
+
+  --c-dm-red-regular: var(--color-red-500);
+  --c-dm-green-regular: var(--color-green-500);
+}
+
+:root {
+  // --- Light mode
+  --bg-lm-blue-high-max: var(--color-blue-800);
+  --bg-lm-blue-high: var(--color-blue-700);
+  --bg-lm-blue-dark: var(--color-blue-600);
+  --bg-lm-blue-medium: var(--color-blue-500);
+  --bg-lm-blue-regular: var(--color-blue-400);
+  --bg-lm-blue-low: var(--color-blue-300);
+  --bg-lm-blue-light: var(--color-blue-200);
+  --bg-lm-blue-extra-light: var(--color-blue-100);
+
+  --bg-lm-light-blue-medium: var(--color-light-blue-600);
+  --bg-lm-light-blue-regular: var(--color-light-blue-500);
+  --bg-lm-light-blue-low: var(--color-light-blue-400);
+
+  --bg-lm-orange-regular: var(--color-orange-500);
+
+  --bg-lm-pink-regular: var(--color-pink-500);
+
+  --bg-lm-red-regular: var(--color-red-500);
+
+  --bg-lm-green-regular: var(--color-green-500);
+
+  // ---- Colores de texto | iconos 
+  --c-lm-blue-high: var(--color-blue-700);
+  --c-lm-blue-dark: var(--color-blue-600);
+  --c-lm-blue-medium: var(--color-blue-500);
+  --c-lm-blue-regular: var(--color-blue-400);
+  --c-lm-blue-low: var(--color-blue-300);
+  --c-lm-blue-light: var(--color-blue-200);
+
+  --c-lm-red-regular: var(--color-red-500);
+  --c-lm-green-regular: var(--color-green-500);
+}

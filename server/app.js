@@ -9,7 +9,7 @@ const cors = require('cors');
 app.set('port', 3000);
 
 // --- USE STATIC FILES
-app.use(express.static(path.join(__dirname, '..', '/public')));
+app.use(express.static(path.join(__dirname, '..', '/dist')));
 
 // --- mIDLEWARES
 app.use(morgan('dev'));
